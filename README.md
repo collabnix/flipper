@@ -38,7 +38,7 @@ Next, add your images to the pi-detector/faces folder. The more images of a pers
 cd flipper/faces<br />
 python ../scripts/add_image.py -i 'image.jpg' -c 'home' -l 'Tom'<br />
 
-I found the best results by taking a photo in the same area that the camera will be placed, and by using the picam. If you want to do this, I created a small python script to take a photo with a 10 second delay and then puts it into the pi-detector/faces folder. To use it:
+I found the best results by taking a photo in the same area that the camera will be placed, and by using the picam. If you want to do this, I created a small python script to take a photo with a 10 second delay and then puts it into the flipper/faces folder. To use it:
 
 cd flipper/scripts<br />
 python take_selfie.py<br />
