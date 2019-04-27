@@ -1,7 +1,10 @@
 
 
 # Flipper
-Raspberry Pi Facial Recognition using AWS Rekognition and Pi-Timolo
+
+Deep Learning Made Simple using Docker containers on Raspberry Pi
+
+
 
 ### Description
 Pi-detector is used with [Pi-Timolo](https://github.com/pageauc/) to search motion generated images for face matches by leveraging AWS Rekognition. In its current state, matches are wrote to event.log. With some additional creativity and work, you could send out a notification or allow/deny access to a room with minimal changes. The install script will place the appropriate files in /etc/rc.local to start on boot.  
