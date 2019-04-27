@@ -1,39 +1,26 @@
-
-
 # Flipper
 
-Deep Learning Made Simple using Docker containers on Raspberry Pi
-
+Object Detection & Deep Learning Made Simple using Docker containers on Raspberry Pi
 
 
 ### Description
-Flipper is used  to search motion generated images for face matches by leveraging AWS Rekognition. In its current state, matches are wrote to event.log. With some additional creativity and work, you could send out a notification or allow/deny access to a room with minimal changes. The install script will place the appropriate files in /etc/rc.local to start on boot.  
 
-### Build Requirements
-Raspberry Pi (Tested with Rpi 3) <br />
-Pi camera <br />
-AWS Rekognition Access (Free tier options available) <br />
+Flipper is very young project which is targeted at object detection and analytics using Docker containers running on tiny Raspberry Pi boxes. It is used  to search motion generated images for face matches by leveraging AWS Rekognition. In its current state, matches are wrote to event.log. With some additional creativity and work, you could send out a notification or allow/deny access to a room with minimal changes. The install script will place the appropriate files in /etc/rc.local to start on boot.  
 
-As an alternative, this set of scripts can be modified to watch any directory that contains images. For example, if you collect still images from another camera and save them to disk, you can alter the image path to run facial recognition against any new photo that is created.
+### Setup
 
-### Install
-Setup a Raspberry Pi with Raspbian Jessie <br />
-https://www.raspberrypi.org/downloads/raspbian/ <br />
-
-Clone this repo and install:<br />
-git clone https://github.com/collabnix/flipper.git<br />
-cd flipper/scripts<br />
-sudo chmod +x install.sh<br />
-sudo ./install<br />
-
-### Build Requirements
-Raspberry Pi (Tested with Rpi 3) <br />
-Picamera <br />
-AWS Rekognition Access (Free tier options available) <br />
+- Buy Raspberry Pi (Tested with Rpi 3) 
+- Buy Heat Sink(Optional)
+- Buy Pi Camera Module 
+- Buy Pi camera Tripod Stand(Optional)
+- Raspberry Pi 3 Model B 4-layer Dog Bone Stack Clear Case Box Enclosure 
+- AWS Rekognition Access (Free tier) 
 
 As an alternative, this set of scripts can be modified to watch any directory that contains images. For example, if you collect still images from another camera and save them to disk, you can alter the image path to run facial recognition against any new photo that is created.
 
-### Install
+
+### Installing Raspbian OS
+
 Setup a Raspberry Pi with Raspbian Jessie <br />
 https://www.raspberrypi.org/downloads/raspbian/ <br />
 
@@ -85,6 +72,8 @@ dockerlabs                        real_time_object_detection.py  v19.03.0-beta1.
 MobileNetSSD_deploy.prototxt.txt  rpi-motion-mmal
 pi_object_detection.py            tf-opencv
 ```
+
+### Clone this repo and install:<br />
 
 ```
 root@node2:~# git clone https://github.com/collabnix/flipper
