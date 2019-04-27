@@ -25,6 +25,33 @@ Setup a Raspberry Pi with Raspbian Jessie <br />
 https://www.raspberrypi.org/downloads/raspbian/ <br />
 
 
+### Enable SSH 
+
+```
+service ssh start
+```
+
+### Enable SSH on boot-time
+
+```
+echo "service ssh start" >> /etc/rc.local
+```
+
+### Installing Docker
+
+```
+curl -sSL https://get.docker.com/ | sh
+```
+
+### Installing Docker Compose
+
+```
+apt install python-pip
+pip install docker-compose
+```
+
+### Start Docker
+
 ```
 root@node2:~# systemctl start docker
 root@node2:~# docker version
